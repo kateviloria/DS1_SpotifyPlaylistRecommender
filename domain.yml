@@ -1,0 +1,162 @@
+intents:
+  - greet
+  - affirm
+  - deny
+  - inform_person
+  - random
+  - howareyougood
+  - howareyoubad
+  - relax
+  - dance
+  - gettogether
+  - club
+  - sad
+  - mad
+  - sulk
+  - scream
+
+entities:
+  - person
+
+slots:
+  person:
+    type: text
+    
+actions:
+  - utter_name
+  - utter_greet
+  - utter_howareyou
+  - utter_relaxordance
+  - utter_nostalgic
+  - utter_tired
+  - utter_cluborgettogether
+  - utter_recplaylist_nostalgia
+  - utter_recplaylist_morningmist
+  - utter_recplaylist_sundays
+  - utter_recplaylist_summer2019
+  - utter_recplaylist_peach
+  - utter_sadormad
+  - utter_miss
+  - utter_sulkorscream
+  - utter_recplaylist_mizzou
+  - utter_recplaylist_sadgirl
+  - utter_recplaylist_sulking
+  - utter_recplaylist_bye
+  - utter_canichoose
+  - utter_default
+
+responses:
+  utter_name:
+  - text: "Hi! What's your name?"
+  
+  utter_greet:
+  - text: |
+      Hey, {person}! Nice to meet you. 
+      Let’s find you a playlist.
+  
+  utter_howareyou:
+  - text: "How are you doing today?"
+
+  utter_relaxordance:
+  - text: |
+      I'm glad you're doing well, {person}.
+      Do you want to relax or do you want to dance?
+  
+  utter_nostalgic:
+  - text: |
+      Relax it is. 
+      Are you the nostalgic type?
+  
+  utter_tired:
+  - text: "Are you tired?"
+  
+  utter_cluborgettogether:
+  - text: |
+      Pick one.
+      A crazy night out at a club or a chill get together with friends?
+    
+  utter_recplaylist_nostalgia:
+  - text: |
+      Okay, {person}.
+      Here's a playlist that you might like. 
+      https://sptfy.com/4S3u
+      Hope you enjoy!
+      
+  utter_recplaylist_morningmist:
+  - text: |
+      Okay, {person}.
+      Here's a playlist that's good for when you're a bit tired.
+      https://sptfy.com/4S3v
+      Rest well.
+ 
+  utter_recplaylist_sundays:
+  - text: |
+      Okay, {person}.
+      Here's a playlist to relax to.
+      https://sptfy.com/4S3w
+      Enjoy.
+ 
+  utter_recplaylist_summer2019:
+  - text: |
+     Okay, {person}.
+     Here's a playlist to dance to with your friends!
+     https://sptfy.com/4S3C
+     Dance away!
+ 
+  utter_recplaylist_peach:
+  - text: |
+     Okay, {person}.
+     Here's a playlist to shake, shake, shake it to!
+     https://sptfy.com/4S3D
+     Don't forget to stay hydrated!
+ 
+  utter_sadormad:
+  - text: | 
+     If you had to choose, are you sad or mad?
+ 
+  utter_miss:
+  - text: "Do you miss someone?"
+ 
+  utter_sulkorscream:
+  - text: "Would you rather sulk or scream into a pillow?"
+ 
+  utter_recplaylist_mizzou:
+  - text: |
+     I'm so sorry that you're missing someone right now, {person}.
+     Here's a playlist that might make you feel better.
+     https://sptfy.com/94cG
+     
+  utter_recplaylist_sadgirl:
+  - text: |
+     It's okay to feel sad sometimes, {person}.
+     Here's a playlist that might make you feel better.
+     https://sptfy.com/94cH
+     
+  utter_recplaylist_sulking:
+  - text: |
+     Sulk away, {person}.
+     https://sptfy.com/94cI
+    
+  utter_recplaylist_bye:
+  - text: |
+     Hope this playlist lets you get out some of your frustrations, {person}.
+     https://sptfy.com/94cJ
+  
+  utter_canichoose:
+  - text: "Since you don't have an answer, is it okay if I choose for you?"
+  
+  utter_recplaylist_yungluv:
+  - text: |
+     Here's a playlist that has a little bit of everything, {person}.
+     https://sptfy.com/4Tc4
+     Hope you like it!
+  
+  utter_default:
+  - text: |
+     I'm sorry.
+     I didn't quite understand that. 
+     Could you please rephrase your answer?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
